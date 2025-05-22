@@ -12,7 +12,7 @@ export class TranslateService {
   //send a POST request to the Server, and add the user-inputted text as the request body
   translateToPigLatin(userInput: string): Observable<string> {
     return this.http.post("http://localhost:8080/translate", userInput, {
-      responseType: "text" //Telling Angular to treat the response as plain text
+      responseType: 'text' //Telling Angular to treat the response as plain text
     })  
   }
 
